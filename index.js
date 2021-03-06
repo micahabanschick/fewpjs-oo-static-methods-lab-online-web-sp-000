@@ -16,6 +16,7 @@ class Formatter {
       for (let i = 0; i < arr.length; i++) {
         if (okArr.includes(arr[i]) && i > 0) {
           newWord.push(arr[i])
+          continue;
         }
         newWord.push(this.capitalize(arr[i]))
       }
